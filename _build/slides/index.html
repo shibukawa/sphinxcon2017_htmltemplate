@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>HTML Template Proposal for Sphinx 2.x &mdash; HTML Template proposal for Sphinx 2.x 2017.11.23 documentation</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="_static/single.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    
+    
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2017.11.23',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/common.js"></script>
+    
+    <script type="text/javascript" src="_static/slides.js"></script>
+    <script type="text/javascript" src="_static/sync.js"></script>
+    <script type="text/javascript" src="_static/controller.js"></script>
+    <script type="text/javascript" src="_static/init.js"></script>
+    
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="HTML Template proposal for Sphinx 2.x 2017.11.23 documentation" href="#" /> 
+  </head>
+  <body>
+
+<section
+   id="slide_container"
+   class='slides layout-regular'>
+
+
+  
+<article class="slide level-1" id="html-template-proposal-for-sphinx-2-x">
+
+<h1>HTML Template Proposal for Sphinx 2.x</h1>
+
+<p><strong>Sphinx 2.xに向けてのHTMLテンプレート改善のご提案</strong></p>
+<ul class="simple">
+<li>SphinxCon 2017</li>
+<li>11/28/2017</li>
+<li>Yoshiki Shibukawa</li>
+</ul>
+
+
+
+<div class="slide-no">1</div>
+
+
+<div class="slide-footer">SphinxCon 2017</div>
+
+</article>
+<article class="slide level-2" id="who-are-you">
+
+<h2>Who Are You</h2>
+
+<img alt="_images/profile.jpeg" src="_images/profile.jpeg" />
+<ul class="simple">
+<li>Yoshiki Shibukawa<ul>
+<li>Sphinx-Users.jp Founder</li>
+<li>Sphinx Commiter</li>
+<li>Work at Future Architect, Inc.</li>
+<li>Twitter: &#64;shibu_jp</li>
+</ul>
+</li>
+<li>I use Sphinx for writing books</li>
+</ul>
+
+
+
+<div class="slide-no">2</div>
+
+
+<div class="slide-footer">SphinxCon 2017</div>
+
+</article>
+<article class="slide level-2" id="html-output-of-sphinx-1-x">
+
+<h2>HTML output of Sphinx 1.x</h2>
+
+<ul class="simple">
+<li>Sphinx supports HTML4 output for 10 years<ul>
+<li>1997: HTML4 released</li>
+<li>2007: Sphinx first release</li>
+<li>2008: Browsers start supporting HTML5</li>
+<li>2014: HTML5 becomes W3C Recommendation</li>
+<li>2016: Docutils 0.13 supports HTML5</li>
+<li>2017: Sphinx 1.6 supports HTML5</li>
+</ul>
+</li>
+<li><strong>We are ready to forward to brilliant future!</strong></li>
+</ul>
+
+
+
+<div class="slide-no">3</div>
+
+
+<div class="slide-footer">SphinxCon 2017</div>
+
+</article>
+<article class="slide level-2" id="brilliant-future-of-sphinx-2-x-my-idea">
+
+<h2>Brilliant Future of Sphinx 2.x (My Idea)</h2>
+
+<ul class="simple">
+<li>Simplify HTML template</li>
+<li>Improve Searching Feature</li>
+<li>Open Graph Protocol</li>
+<li>Offline Mode</li>
+<li>Improve Performance</li>
+</ul>
+
+
+
+<div class="slide-no">4</div>
+
+
+<div class="slide-footer">SphinxCon 2017</div>
+
+</article>
+<article class="slide level-2" id="simplify-html-template">
+
+<h2>Simplify HTML template</h2>
+
+<ul class="simple">
+<li>Current HTML template has deep dependency<ul>
+<li>It is difficult to understand how HTML template work</li>
+<li>It is easy to keep same structure of installed template</li>
+<li>It is difficult to create original template</li>
+</ul>
+</li>
+</ul>
+<img alt="_images/template.png" src="_images/template.png" />
+<ul class="simple">
+<li>Create thin HTML template</li>
+</ul>
+
+
+
+<div class="slide-no">5</div>
+
+
+<div class="slide-footer">SphinxCon 2017</div>
+
+</article>
+<article class="slide level-2" id="improve-searching-feature">
+
+<h2>Improve Searching Feature</h2>
+
+<ul class="simple">
+<li>Split searching index into words/positions<ul>
+<li>Words are read from all pages</li>
+<li>Search word completion</li>
+</ul>
+</li>
+<li>Add search words from extensions<ul>
+<li>e.g. Node texts in blockdiag</li>
+</ul>
+</li>
+</ul>
+
+
+
+<div class="slide-no">6</div>
+
+
+<div class="slide-footer">SphinxCon 2017</div>
+
+</article>
+<article class="slide level-2" id="open-graph-protocol">
+
+<h2>Open Graph Protocol</h2>
+
+<ul class="simple">
+<li>OGP is used from SNS like Facebook/Twitter/Slack<ul>
+<li>WebPage summary cards on SNS are created from OGP</li>
+<li>OGP is meta tags/JSON+LD in &lt;head&gt; tag</li>
+</ul>
+</li>
+</ul>
+
+
+
+<div class="slide-no">7</div>
+
+
+<div class="slide-footer">SphinxCon 2017</div>
+
+</article>
+<article class="slide level-2" id="offline-mode">
+
+<h2>Offline Mode</h2>
+
+<ul class="simple">
+<li>Offline mode had been a dream of many Web Developers<ul>
+<li>deleted: Google Gears</li>
+<li>deprecated: Application Cache</li>
+<li>new: Service Worker</li>
+</ul>
+</li>
+<li>Service Worker is the best solution ever<ul>
+<li>WorkBox is good framework for caching (<a class="reference external" href="https://developers.google.com/web/tools/workbox/">https://developers.google.com/web/tools/workbox/</a>).</li>
+</ul>
+</li>
+</ul>
+
+
+
+<div class="slide-no">8</div>
+
+
+<div class="slide-footer">SphinxCon 2017</div>
+
+</article>
+<article class="slide level-2" id="improve-performance">
+
+<h2>Improve Performance</h2>
+
+<ul class="simple">
+<li><strong>Prefetch</strong><ul>
+<li>Prefetch all/next contents of document to improve downloading speed</li>
+</ul>
+</li>
+<li><strong>AMP</strong><ul>
+<li>Improve mobile performance during poor network speed.</li>
+</ul>
+</li>
+</ul>
+
+
+
+<div class="slide-no">9</div>
+
+
+<div class="slide-footer">SphinxCon 2017</div>
+
+</article>
+<article class="slide level-2" id="conclusion">
+
+<h2>Conclusion</h2>
+
+<ul class="simple">
+<li><strong>We are ready to forward to brilliant future!</strong></li>
+<li>More features to provide information to readers easier<ul>
+<li>Easy to customize</li>
+<li>Easy to search</li>
+<li>Easy to share</li>
+<li>Performance</li>
+</ul>
+</li>
+</ul>
+
+
+
+<div class="slide-no">10</div>
+
+
+<div class="slide-footer">SphinxCon 2017</div>
+
+</article>
+
+</section>
+
+<section id="slide_notes">
+
+</section>
+
+  </body>
+</html>

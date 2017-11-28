@@ -1,0 +1,29 @@
+digraph G {
+  subgraph cluster0 {
+    color=grey;
+    label="basic";
+    defindex -> layout;
+    genindexsingle -> layout;
+    genindexsplit -> layout;
+    genindex -> layout;
+    page -> layout;
+    search -> layout;
+    layout -> localtoc;
+    layout -> globaltoc;
+    layout -> relations;
+    layout -> sourcelink;
+    layout -> searchbox;
+    layout -> indexsidebar;
+    layout -> opensearch;
+    searchresults;
+    genindexsingle [label="genindex-single"];
+    genindexsplit [label="genindex-split"];
+  }
+
+  subgraph cluster1 {
+    color=grey;
+    label="agogo";
+    layout2 -> layout;
+    layout2 [label="layout"];
+  }
+}
